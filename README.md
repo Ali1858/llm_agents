@@ -19,8 +19,11 @@ This cycle allows the agent to tackle complex, multi-step problems by breaking t
 
 ## Examples in this Repository
 
-1. [**SQL Agent**](nl2sql_agent.ipynb): Converts natural language queries to SQL and interacts with databases.
-2. 
+1. [**Multi Agents Clinical Metadata Extraction**](clinical_ie_multi_agents.ipynb):  A multi agentic system for extracting and structuring clinical metadata from medical case studies. More info on dataset can be found [here](https://figshare.com/collections/MACCRs/4220324/4).
+    * The `RetrieverAgent` is used to extract relevant text chunks for a subset of the metadata categories.
+    * The `MetadataExtractionAgent` is then used to generate the final structured metadata, leveraging the text chunks retrieved by the `RetrieverAgent`.
+    * The `OutputValidator` is used to ensure the generated metadata conforms to the expected data model.
+2. [**Natural Language to SQL Agent**](nl2sql_agent.ipynb): An NL2SQL agent that leverages Large Language Models (LLMs) and the ReAct (Reason+Act) framework to convert natural language queries into SQL and perform various database operations.
 
 Each example demonstrates how LLM agents can be applied to specific domains, showcasing their flexibility and power in solving real-world problems.
 

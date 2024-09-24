@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional, Any, Union
 from mysql.connector import Error, MySQLConnection
-from nl2sql_tools import get_db_connection
+from nl2sql import get_db_connection
 
 def list_tables() -> List[str]:
     """

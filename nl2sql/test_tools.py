@@ -1,7 +1,7 @@
 import unittest
 from dotenv import load_dotenv
-from nl2sql_tools import initialize_db_connection, close_db_connection
-from nl2sql_tools.tools import (
+from nl2sql import initialize_db_connection, close_db_connection
+from nl2sql.tools import (
     list_tables,
     get_table_schema_and_sample,
     validate_sql_query,
